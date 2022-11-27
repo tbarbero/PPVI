@@ -28,6 +28,7 @@ Output files: *yyyymmdd_hhZ_htuv.nc*, *yyyymmdd_hhZ_pv.nc*
     * psi: streamfunction [m^2/s]
     * u,v: non-divergent wind [m/s]
     * avor: absolute vorticity [1/s]
+
 Objective:
 * Crop global data grid into basin-wide region given by the namelist variables 'west', 'east', 'south', 'north' in run_pv1.csh 
 * 'east' and 'west' $\epsilon$ (0,360)
@@ -45,10 +46,13 @@ Objective:
 Input files: *2017.NAtl.num.txt*, *yyyymmdd_hhZ_pv.nc*
 
 Output files: *center.txt*
-> 1. 06Z26AUG2017 lat.x lon.x
-> 2. 12Z26AUG2017 lat.x lon.x
-> ...
-> 40. 00Z05SEP2017 lat.x lon.x
+
+1. 06Z26AUG2017 lat.x lon.x
+2. 12Z26AUG2017 lat.x lon.x
+
+...
+
+40. 00Z05SEP2017 lat.x lon.x
 
 Objective:
 * For all initialized runs of a storm, compute the TC storm center out to 240Z every 6 hours
@@ -79,10 +83,10 @@ Output files: *yyyymmdd_hhZ_htuv2.nc*,  *yyyymmdd_hhZ_symhtuv.nc*
     * up, vb: non-divergent wind associated with the perturbation stream function
 
 Objective:
-    * Read in adjusted height and streamfunction from *yyyymmdd_hhZ_pv.nc*, and temperature from  *yyyymmdd_hhZ_htuv.nc*
-    * Compute basic fields: symmetric height(h), streamfunction(psi), and temperature(t) using TC center
-    * Compute perturbation fields: subtract basic fields from total fields of h, psi, and t
-    * Compute basic and perturbation non-divergent winds from associated stream functions, individually
+* Read in adjusted height and streamfunction from *yyyymmdd_hhZ_pv.nc*, and temperature from  *yyyymmdd_hhZ_htuv.nc*
+* Compute basic fields: symmetric height(h), streamfunction(psi), and temperature(t) using TC center
+* Compute perturbation fields: subtract basic fields from total fields of h, psi, and t
+* Compute basic and perturbation non-divergent winds from associated stream functions, individually
  
 ### Step 4. run_pv2.csh
 
@@ -190,7 +194,8 @@ Input files:
 
 Output files: *yyyymmdd_hhZ_steering_3degree_$system*
 
-*yyyymmdd_hhZ_steering_3degree_$system*
+* *yyyymmdd_hhZ_steering_3degree_$system*
+
     * u_ave,v_ave (forecast_time,level): average wind in circle of 3-degree radius based on the TC center at each level
     * ubt,vbt (time): TC movement vector at each time step, computed based on the TC locations in the best track data
     * lat_TC_center,lon_TC_center (time): TC center at each time step. They are the same as in center.txt. 

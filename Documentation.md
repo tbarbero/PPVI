@@ -253,15 +253,15 @@ $$\\Large q' = q - \\hat{q}$$
 * $x$ denotes total fields,
 * $\\hat{x}$ denotes basic fields
 
-* $Global h,t,u,v$
+* Global $h$, $t$, $u$, $v$
 
 
-* $q$: potential vorticity<br>,
-* $\\Phi$: geopotential height<br>,
-* $\\Psi$: streamfunction<br>,
-* $f$: coriolis parameter<br>,
-* $a$: Earth's radius<br>,
-* $\\kappa$:$\\frac{R_d}{C_p}$<br>",
-* $\\pi$: $C_p(p/p_o)^\\kappa$ - vertical coordinate<br>",
-* $\\lambda$: latitude<br>",
-* $\\phi$: longitude"
+* $q$: potential vorticity,<br>
+* $\\Phi$: geopotential height,<br>
+* $\\Psi$: streamfunction,<br>
+* $f$: coriolis parameter,<br>
+* $a$: Earth's radius,<br>
+* $\\kappa$:$\\frac{R_d}{C_p}$,<br>
+* $\\pi$: $C_p(p/p_o)^\\kappa$ - vertical coordinate,<br>
+* $\\lambda$: latitude,<br>
+* $\\phi$: longitude

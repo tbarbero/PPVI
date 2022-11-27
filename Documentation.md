@@ -1,4 +1,4 @@
-# Piecewise Potential Vorticity Inversion Tool Layout
+# Documentation
 The Piecewise Potential Vorticity Inverison (PPVI) is computed through a series of scripts, in order below:
 1. run_pv1.csh
 2. run_pv1.csh
@@ -10,6 +10,8 @@ The Piecewise Potential Vorticity Inverison (PPVI) is computed through a series 
 8. mask_region.py
 9. run_sqinvmask.csh
 10. run_steersq.csh 
+
+Moreover, the csh/python scripts above, is wrapped in .csh scripts, to run seamlessly all together
 
 ### Step 1. run_pv1.csh
 
@@ -237,7 +239,7 @@ $$\\Large\\zeta = \\frac{\\partial^2\\Psi}{\\partial x^2} + \\frac{\\partial ^2\
 
 Boundary Conditions
 
-Lateral boundadry of $$\\theta$$ and $$\\psi$$ and $$\\theta$$ on the upper and lower boundaries
+Lateral boundadry of $\\theta$ and $\\psi$ and $\\theta$ on the upper and lower boundaries
 
 $$\\Large \\psi' =  \\psi - \\overline{\\psi}$   $\\hspace{7mm}$ $\\Large\\phi' =  \\phi - \\hat{\\phi}$  $\\hspace{7mm}$ $\\Large q' = q - \\hat{q}$$
 

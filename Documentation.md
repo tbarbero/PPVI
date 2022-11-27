@@ -1,3 +1,4 @@
+# Piecewise Potential Vorticity Inversion Tool Layout
 The Piecewise Potential Vorticity Inverison (PPVI) is computed through a series of scripts, in order below:
 1. run_pv1.csh
 2. run_pv1.csh
@@ -210,8 +211,51 @@ Output files:
 
 Objective: Calculate the deep layer mean steering flow (DLMSF) from 925hPa to 300hPa, weighted on the width of each layer.
 
-
+<br>
+<br>
+<br>
 # Math
 Ertels Potential Vorticity
 
 $$\\Large q = \\frac{g\\kappa\\pi}{p}[(f+\\nabla^2\\Phi)\\frac{\\partial^2\\Phi}{\\partial\\pi^2}-\\frac{1}{a^2cos^2\\phi}\\frac{\\partial^2\\Phi}{\\partial\\lambda\\partial\\pi}\\frac{\\partial^2\\Phi}{\\partial\\lambda\\partial\\pi}-\\frac{1}{a^2}\\frac{\\partial^2\\Psi}{\\partial\\phi\\partial\\pi}\\frac{\\partial^2\\Phi}{\\partial\\phi\\partial\\pi}]$<br>$$
+
+Charney's Nonlinear Balanced Equation
+
+$$\\Large\\nabla^2 \\Phi = \\nabla \\cdot ( f \\nabla \\Psi ) + \\frac{2}{a^4cos^2\\phi} \\frac{\\partial(\\partial\\Phi/\\partial\\lambda,\\partial\\Phi/\\partial\\phi)}{\\partial(\\lambda,\\phi)}$$
+
+Nondivergent Wind relation
+
+$$\\Large V = \\hat{k} \\times \\nabla\\Psi$$
+
+Hydrostatic Balance
+
+$$\\Large\\theta = -\\frac{\\partial\\phi}{\\partial\\pi}$$
+
+Relative vorticity and streamfunction relation (Elliptical 2nd order PDE)
+
+$$\\Large\\zeta = \\frac{\\partial^2\\Psi}{\\partial x^2} + \\frac{\\partial ^2\\Psi}{\\partial y^2}$$
+
+Boundary Conditions
+
+Lateral boundadry of $$\\theta$$ and $$\\psi$$ and $$\\theta$$ on the upper and lower boundaries
+
+$$\\Large \\psi' =  \\psi - \\overline{\\psi}$   $\\hspace{7mm}$ $\\Large\\phi' =  \\phi - \\hat{\\phi}$  $\\hspace{7mm}$ $\\Large q' = q - \\hat{q}$$
+
+$$x'$$ denotes perturbation fields,
+
+$$x$$ denotes total fields,
+
+$$\\hat{x}$$ denotes basic fields
+
+$$Global h,t,u,v$$
+
+"\n",
+"$q$: potential vorticity<br>\n",
+"$\\Phi$: geopotential height<br>\n",
+"$\\Psi$: streamfunction<br>\n",
+"$f$: coriolis parameter<br>\n",
+"$a$: Earth's radius<br>\n",
+"$\\kappa$:$\\frac{R_d}{C_p}$<br>\n",
+"$\\pi$: $C_p(p/p_o)^\\kappa$ - vertical coordinate<br>\n",
+"$\\lambda$: latitude<br>\n",
+"$\\phi$: longitude"

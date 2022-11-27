@@ -216,7 +216,9 @@ Objective: Calculate the deep layer mean steering flow (DLMSF) from 925hPa to 30
 <br>
 <br>
 <br>
-# Math
+
+# Equations and Notation
+
 Ertels Potential Vorticity
 
 $$\\Large q = \\frac{g\\kappa\\pi}{p}[(f+\\nabla^2\\Phi)\\frac{\\partial^2\\Phi}{\\partial\\pi^2}-\\frac{1}{a^2cos^2\\phi}\\frac{\\partial^2\\Phi}{\\partial\\lambda\\partial\\pi}\\frac{\\partial^2\\Phi}{\\partial\\lambda\\partial\\pi}-\\frac{1}{a^2}\\frac{\\partial^2\\Psi}{\\partial\\phi\\partial\\pi}\\frac{\\partial^2\\Phi}{\\partial\\phi\\partial\\pi}]$<br>$$
@@ -237,27 +239,29 @@ Relative vorticity and streamfunction relation (Elliptical 2nd order PDE)
 
 $$\\Large\\zeta = \\frac{\\partial^2\\Psi}{\\partial x^2} + \\frac{\\partial ^2\\Psi}{\\partial y^2}$$
 
-Boundary Conditions
+**Boundary Conditions**
 
 Lateral boundadry of $\\theta$ and $\\psi$ and $\\theta$ on the upper and lower boundaries
 
-$$\\Large \\psi' =  \\psi - \\overline{\\psi}$   $\\hspace{7mm}$ $\\Large\\phi' =  \\phi - \\hat{\\phi}$  $\\hspace{7mm}$ $\\Large q' = q - \\hat{q}$$
+$$\\Large \\psi' =  \\psi - \\overline{\\psi}$$
 
-$$x'$$ denotes perturbation fields,
+$$\\Large\\phi' =  \\phi - \\hat{\\phi}$$
 
-$$x$$ denotes total fields,
+$$\\Large q' = q - \\hat{q}$$
 
-$$\\hat{x}$$ denotes basic fields
+* $x'$ denotes perturbation fields,
+* $x$ denotes total fields,
+* $\\hat{x}$ denotes basic fields
 
-$$Global h,t,u,v$$
+* $Global h,t,u,v$
 
-"\n",
-"$q$: potential vorticity<br>\n",
-"$\\Phi$: geopotential height<br>\n",
-"$\\Psi$: streamfunction<br>\n",
-"$f$: coriolis parameter<br>\n",
-"$a$: Earth's radius<br>\n",
-"$\\kappa$:$\\frac{R_d}{C_p}$<br>\n",
-"$\\pi$: $C_p(p/p_o)^\\kappa$ - vertical coordinate<br>\n",
-"$\\lambda$: latitude<br>\n",
-"$\\phi$: longitude"
+
+* $q$: potential vorticity<br>,
+* $\\Phi$: geopotential height<br>,
+* $\\Psi$: streamfunction<br>,
+* $f$: coriolis parameter<br>,
+* $a$: Earth's radius<br>,
+* $\\kappa$:$\\frac{R_d}{C_p}$<br>",
+* $\\pi$: $C_p(p/p_o)^\\kappa$ - vertical coordinate<br>",
+* $\\lambda$: latitude<br>",
+* $\\phi$: longitude"

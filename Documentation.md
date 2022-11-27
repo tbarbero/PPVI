@@ -211,8 +211,7 @@ Output files:
 Objective: Calculate the deep layer mean steering flow (DLMSF) from 925hPa to 300hPa, weighted on the width of each layer.
 
 
+# Math
+Ertels Potential Vorticity
 
-
-
-### Math
-
+$$\\Large q = \\frac{g\\kappa\\pi}{p}[(f+\\nabla^2\\Phi)\\frac{\\partial^2\\Phi}{\\partial\\pi^2}-\\frac{1}{a^2cos^2\\phi}\\frac{\\partial^2\\Phi}{\\partial\\lambda\\partial\\pi}\\frac{\\partial^2\\Phi}{\\partial\\lambda\\partial\\pi}-\\frac{1}{a^2}\\frac{\\partial^2\\Psi}{\\partial\\phi\\partial\\pi}\\frac{\\partial^2\\Phi}{\\partial\\phi\\partial\\pi}]$<br>$$

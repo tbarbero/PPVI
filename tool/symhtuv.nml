@@ -1,0 +1,12 @@
+&nlist     ! -*- F90 -*-
+   infile1 = '/archive/twb/pv_inversion/2017/NAtl/04/GFS_analysis/2017083112/20170831_12Z_htuv.nc'
+   infile2 = '/archive/twb/pv_inversion/2017/NAtl/04/GFS_analysis/2017083112/20170831_12Z_pv.nc'
+   trackfile = '/archive/twb/pv_inversion/2017/NAtl/04/GFS_analysis/2017083112/center.txt'
+   outfile1 = '/archive/twb/pv_inversion/2017/NAtl/04/GFS_analysis/2017083112/20170831_12Z_symhtuv.nc'
+   outfile2 = '/archive/twb/pv_inversion/2017/NAtl/04/GFS_analysis/2017083112/20170831_12Z_htuv2.nc'
+   nmx = 48        ! The number of direction to do azimuthal mean
+   rmax = 2000000. ! The radius(m) to caculate symmetric u,v
+   imax = 3000     ! Max. iteration for psi and h (nonlinear balance eq.)
+   omegs = 1.6     ! Over-relaxation parameter
+   thrs_h = 1.     ! Thres hold of h
+&end

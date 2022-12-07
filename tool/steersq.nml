@@ -1,0 +1,7 @@
+&nlist     ! -*- F90 -*-
+   infile = '/archive/twb/pv_inversion/2017/NAtl/04/GFS_analysis/2017083112/20170831_12Z_sqinvph.nc'
+   trackfile = '/archive/twb/pv_inversion/2017/NAtl/04/GFS_analysis/2017083112/center.txt'
+   outfile = '/archive/twb/pv_inversion/2017/NAtl/04/GFS_analysis/2017083112/20170831_12Z_steering_3degree_sqinvph.nc'
+   starttime = '3118'
+   ideg = 3  ! radius to compute axisymmetric mean steering flow in degree, from 3 to 10
+&end

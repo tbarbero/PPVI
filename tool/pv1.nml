@@ -1,0 +1,28 @@
+&nlist     ! -*- F90 -*-
+   outfile1 = '/archive/Tyler.Barbero/pv_inversion/2017/NAtl/04/GFS_analysis/2017083112/20170831_12Z_htuv.nc'
+   outfile2 = '/archive/Tyler.Barbero/pv_inversion/2017/NAtl/04/GFS_analysis/2017083112/20170831_12Z_pv.nc'
+   h_infile = '/archive/Tyler.Barbero/GFS/analysis/20170831_12Z00_h_360x180.10day.nc'
+   t_infile = '/archive/Tyler.Barbero/GFS/analysis/20170831_12Z00_t_360x180.10day.nc'
+   u_infile = '/archive/Tyler.Barbero/GFS/analysis/20170831_12Z00_u_360x180.10day.nc'
+   v_infile = '/archive/Tyler.Barbero/GFS/analysis/20170831_12Z00_v_360x180.10day.nc'
+   plev = 1000., 925., 850., 700., 500., 400., 300., 250., 200., 150., 100., 70.
+   dx = 1.
+   dy = 1.
+   west = 250.
+   east = 355.
+   south = 0.
+   north = 55.
+   imax = 3000
+   omegs = 1.85
+   thrs = 1.e5
+   ! change parameters for each model below
+   geopotential = .false.
+   x_name = 'lon'
+   y_name = 'lat'
+   level_name = 'lev'
+   time_name = 'time' 
+   h_name = 'hgt'
+   t_name = 'temp'
+   u_name = 'uwind'
+   v_name = 'vwind'
+&end

@@ -1,0 +1,7 @@
+&nlist     ! -*- F90 -*-
+   outfile = '/archive/twb/pv_inversion/2017/NAtl/04/GFS_analysis/2017083112/20170831_12Z_pv2.nc'
+   infile = '/archive/twb/pv_inversion/2017/NAtl/04/GFS_analysis/2017083112/20170831_12Z_htuv2.nc'
+   imax = 3000
+   omegs = 1.85
+   thrs = 1.e5
+&end

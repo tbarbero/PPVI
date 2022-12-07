@@ -1,0 +1,20 @@
+&nlist     ! -*- F90 -*-
+   outfile = '/archive/twb/pv_inversion/2017/NAtl/04/GFS_analysis/2017083112/20170831_12Z_bhigh.nc'
+   infile1 = '/archive/twb/pv_inversion/2017/NAtl/04/GFS_analysis/2017083112/20170831_12Z_pvb.nc'
+   infile2 = '/archive/twb/pv_inversion/2017/NAtl/04/GFS_analysis/2017083112/20170831_12Z_pv2.nc'
+   mask = .true.      ! if mask = T, isturg will be set up as "3" in the code
+   maskfiles = 
+   ntimes = 1
+   OMEGAS = 1.8        ! relaxation parameter 
+   OMEGAH = 1.6        ! relaxation parameter
+   PRT = 0.5           ! underrelaxation parameter
+   THRSH = 0.1         ! CONVERGENCE THRESHOLD
+   TSCAL = 1.          ! SCALE FACTOR FOR THTA
+   QSCAL = 1.          ! SCALE FOR Q
+   IMAP = 1            ! 2 FOR XY, 1 FOR SPHERICAL
+   INLIN = 1           ! LINEARIZATION PARM (0=THROW OUT NONLINEAR TERMS, 1=EQUAL PARTITIONING)
+   IQD = 0             ! QPRM DEPENDS ON ANOTHER FILE? (O = NO)
+   NOUT = 1            ! NUMBERS OF INVERSIONS
+   IBC = 1             ! BOUNDARY CONDITIONS (0=HOMOGENEOUS)
+     
+&end
